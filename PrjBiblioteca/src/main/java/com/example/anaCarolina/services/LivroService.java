@@ -33,4 +33,8 @@ private final LivroRepository livroRepository;
 		return livroRepository.findAll();
 	}
 	
+	public List<Livro> buscarPorNome(String nome){
+		return livroRepository.buscarPorNome(nome);
+	}
+	
 }
